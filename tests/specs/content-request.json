@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Get Content",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Request specific content item by ID"
+            }
+          }
+        ],
+        "send": {
+          "callback": "content:request"
+        }
+      }
+    ]
+  }
+]
